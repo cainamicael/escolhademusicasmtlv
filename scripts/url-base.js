@@ -1,1 +1,1 @@
-const urlBase = 'http://localhost:8080/api/'
+const urlBase = 'https://escolhademusicasmtlvbackend-production.up.railway.app/api/'
