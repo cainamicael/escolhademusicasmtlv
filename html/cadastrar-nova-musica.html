@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar nova música</title>
+    <link rel="stylesheet" href="../css/style-cadastrar-nova-musica.css">
+    <link rel="icon" href="../css/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="container cadastrar-musica">
+            <h3>Adicionar</h3>
+            <h1>Nova Música</h1>
+            <div class="tres-partes"></div>
+            <div class="tres-partes"></div>
+            <div class="tres-partes"></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="conteudo">
+            <div class="modulo">
+                <form id="formulario">
+                    <input type="text" name="nome" placeholder="Nome de música..." required>
+                    <input type="text" name="cantor" placeholder="Quem canta a música..." required>
+                    <label for="selecao">Categoria: </label>
+                    <select name="categoria" id="selecao">
+                        <option value="ADORACAO">Adoração</option>
+                        <option value="CELEBRACAO">Celebração</option>
+                    </select>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>   
+    </div>   
+    <script src="../scripts/url-base.js"></script>
+    <script src="../scripts/cadastrar-nova-musica.js"></script>
+</body>
+</html>

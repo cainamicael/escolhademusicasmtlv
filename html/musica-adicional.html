@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Adicional</title>
+    <link rel="stylesheet" href="../css/style-musica-adicional.css">
+    <link rel="icon" href="../css/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="container musicas-selecionadas">
+            <h3>Escolher</h3>
+            <h1>Mais uma</h1>
+            <div class="tres-partes"></div>
+            <div class="tres-partes"></div>
+            <div class="tres-partes"></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="conteudo">
+
+            <div class="selecao">
+                <p>Selecione a categoria:</p>
+                <select name="categoria" id="selecao" onchange="pegarValor()">
+                    <option value="ADORACAO">Adoração</option>
+                    <option value="CELEBRACAO">Celebração</option>
+                </select>
+            </div>
+
+            <div class="modulos">
+
+                <!--Dinamicamente-->
+
+            </div>
+
+            <div class="final">
+                <button id="confirmar" onclick="confirmar()">Confirmar</button>
+                <button id="cancelar" onclick="cancelar()">Cancelar</button>
+            </div>
+
+        </div>   
+    </div>   
+    <script src="../scripts/url-base.js"></script>
+    <script src="../scripts/musica-adicional.js"></script>
+</body>
+</html>
