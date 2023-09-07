@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,36 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="css/favicon_io/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
+    <div class="fade hide"></div>
+    <div class="container">
+        <div class="modal hide">
+            <!-- Modelo -->
+
+            <!-- Dinamicamente -->
+
+            <div class="modal-header">
+                <span>Copie e cole</span>
+                <button class="fechar-modal" onclick="fecharModal()">Fechar</button>
+            </div>
+            <div class="modal-main">
+                <h2>Graça e paz à todos!</h2>
+                <p>Seguem abaixo as músicas que iremos tocar: </p>
+                <br>
+                <div class="musicas-modal">
+
+                    <!-- Dinamicamente -->
+
+                </div>
+                <h3>Deus abençoe a todos!</h3>
+
+            </div>
+
+        </div>
+    </div>
+
+
     <div class="container">
         <div class="container musicas-selecionadas">
             <h3>Músicas</h3>
@@ -18,32 +48,68 @@
             <div class="clear"></div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="conteudo">
+            <div class="inicio">
+                <h1>Selecione a catagoria da música:</h1>
+
+                <select name="categoria" id="selecao" onchange="pegarValor()">
+                    <option value="">Selecione</option>
+                    <option value="ADORACAO">Adoração</option>
+                    <option value="APELO">Apelo</option>
+                    <option value="CEIA">Ceia</option>
+                    <option value="CELEBRACAO">Celebração</option>
+                    <option value="CIRCULO_DE_ORACAO">Círculo de Oração</option>
+                    <option value="CORINHOS">Corinhos</option>
+                    <option value="FAMILIA">Família</option>
+                    <option value="GRATIDAO">Gratidão</option>
+                    <option value="MISSOES">Missões</option>
+                    <option value="MULHERES">Mulheres</option>
+                    <option value="NATAL">Natal</option>
+                </select>
+            </div>
+
+
             <div class="modulos">
 
                 <!-- Dinamicamente -->
 
+                <!-- Modelo -->
+
+                <!-- <div class="modulo" id="modulo-1">
+                    <h4>♬</h4>
+                    <input type="hidden" id="id" value="1">
+                    <input type="hidden" id="categoria-1" value="ADORACAO">
+                    <h2 class="musica" id="musica-1">Nome da musica</h2>
+                    <h2 class="cantor" id="cantor-1">(Nome do cantor)</h2>
+                    <button id="botao-1" onclick="botaoClicado()">Escolher outra Música</button>
+                    <button id="adicionar" onclick="adicionar()">+</button>
+                    <button id="remover" onclick="remover()">-</button>
+                </div> -->
+
             </div>
+
+
 
             <div class="final">
                 <button id="confirmar" onclick="confirmar()">Confirmar</button>
                 <button id="cancelar" onclick="cancelar()">Cancelar</button>
             </div>
 
-        </div>   
-    </div>   
-    
+        </div>
+    </div>
+
     <div class="container">
         <div class="ancoras">
-            <a href="html/musica-adicional.html" target="_blank">Quero mais uma música</a>
+            <!-- <a href="html/musica-adicional.html" target="_blank">Quero mais uma música</a> -->
             <a href="html/listar-musicas.html" target="_blank">Listar músicas já tocadas</a>
-            <a href="html/listar-todas.html" target="_blank">Listar todas as músicas</a>
+            <a href="html/listar-todas.html" target="_blank">Listar todas as músicas / Editar</a>
             <a href="html/cadastrar-nova-musica.html" target="_blank">Cadastrar nova música</a>
         </div>
     </div>
     <script src="scripts/url-base.js"></script>
     <script src="scripts/index.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,50 @@
     <link rel="stylesheet" href="../css/style-listar-todas.css">
     <link rel="icon" href="../css/favicon_io/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
+
+    <div class="fade hide"></div>
+    <div class="container">
+        <div class="modal hide">
+            <!-- Modelo -->
+
+            <!-- Dinamicamente -->
+
+            <!-- <div class="modal-header">
+                <span>Editar - Faça as Alterações</span>
+                <button class="fechar-modal" onclick="fecharModal()">Fechar</button>
+            </div>
+            <div class="modal-main">
+                <form>
+                    <input type="text" name="nome" placeholder="Nome da música..." value="Música dinâmica" required>
+                    <input type="text" name="cantor" placeholder="Nome de quem canta..." value="Cantor dinâmico"
+                        required>
+
+                    <label for="selecao">Categoria: </label>
+                    <select name="categoria" id="selecao">
+                        <option value="">Selecione</option>
+                        <option value="ADORACAO">Adoração</option>
+                        <option value="APELO">Apelo</option>
+                        <option value="CEIA">Ceia</option>
+                        <option value="CELEBRACAO">Celebração</option>
+                        <option value="CIRCULO_DE_ORACAO">Círculo de Oração</option>
+                        <option value="CORINHOS">Corinhos</option>
+                        <option value="FAMILIA">Família</option>
+                        <option value="GRATIDAO">Gratidão</option>
+                        <option value="MISSOES">Missões</option>
+                        <option value="MULHERES">Mulheres</option>
+                        <option value="NATAL">Natal</option>
+                    </select>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="salvar-modal" onclick="salvarModal(id)">Salvar</button>
+            </div> -->
+
+        </div>
+    </div>
+
     <div class="container">
         <div class="container cadastrar-musica">
             <h3>Músicas</h3>
@@ -31,11 +75,31 @@
 
                 <!--Aqui vem dinamicamente o conteúdo-->
 
+                <!-- <div class="modulo">
+                    <span>ID:</span>
+                    <p>${dado.id}</p>
+    
+                    <span>NOME:</span>
+                    <p>${dado.nome}</p>
+    
+                    <span>QUEM CANTA:</span>
+                    <p>${dado.cantor}</p>
+    
+                    <span>CATEGORIA:</span>
+                    <p>${dado.categoria}</p>
+    
+                    <span>QUANDO FOI TOCADA: </span>
+                    <p>${dataFormatada}</p>
+
+                    <button class="editar" id="botao-editar" onclick="abrirModal(${dado.id})">Editar ✎</button>
+                </div> -->
+
             </div>
-        </div>   
-    </div>   
+        </div>
+    </div>
 
     <script src="../scripts/url-base.js"></script>
     <script src="../scripts/Listar-todas.js"></script>
 </body>
+
 </html>
